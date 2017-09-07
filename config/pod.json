@@ -1,0 +1,22 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "",
+    "labels": {
+      "purpose": "whatsit-image-index-pod",
+      "podId": ""
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "containers": [{
+      "name": "whatsit-image-index-bigquery",
+      "image": "gcr.io/whatsit-174908/whatsit-image-index-bigquery:latest",
+      "env": [{
+        "name": "podId",
+        "value": ""
+      }]
+    }]
+  }
+}
