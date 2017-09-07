@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: whatsit-image-index
+  namespace: whatsit
+  labels:
+    name: whatsit-image-index
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 6379
+      targetPort: 6379
+      protocol: TCP
+  selector:
+    name: whatsit-image-index
