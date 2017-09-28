@@ -14,8 +14,8 @@
       "name": "whatsit-image-index-bigquery",
       "image": "gcr.io/whatsit-174908/whatsit-image-index-bigquery:latest",
       "env": [{
-        "name": "podId",
-        "value": ""
+        "name": "DATA_SET_ID",
+        "value": "datasetId"
       }]
     }]
   }
