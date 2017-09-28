@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "child-process-promise": "^2.2.1",
-    "node-redis-pubsub": "^1.0.3"
+    "whatsit-pubsub": "0.0.12"
   }
 }
